@@ -1,0 +1,17 @@
+section.info 
+    .info__text
+        .info__text-title Travel any corner of the world with travelo
+        .info__text-subtitle
+            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+        button Read More
+    .info__facts 
+        +infoItem('10', 'Years Experience')
+        +infoItem('500', 'Destination Collaboration')
+        +infoItem('50k', 'Happy customer')
+    .info__video
+        +image('play.svg')
+        video(width="320" height="240" controls)
+            source(src="movie.mp4" type="video/mp4") 
+            source(src="movie.ogg" type="video/ogg") 
+            | Your browser does not support the video tag.

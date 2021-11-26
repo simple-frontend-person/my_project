@@ -1,0 +1,19 @@
+footer 
+    .footer__info 
+        .logo 
+            +image('logo.png')
+            span Travelo
+        .email chess@template.com
+        .tel +123 4567 890
+        .social 
+            +socialItems(['tw.svg', 'tw.svg', 'tw.svg', 'tw.svg'])
+    .footer__link 
+        .footer__link_title 
+        +menu('footer__menu', ['Destinantion', 'Service', 'About us', 'Contact'], -1)
+    .footer__action 
+        .footer__action_title Subscribe To Get The Latest News
+        .footer__action_descr 
+            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        .footer__action_btn 
+            input(type="text" placeholder='Enter email')
+            button Subscribe

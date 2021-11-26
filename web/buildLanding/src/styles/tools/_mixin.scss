@@ -1,0 +1,10 @@
+@mixin font($fontSize, $lineHeight) {
+    font-size: convert($fontSize, vw);
+    line-height: convert($lineHeight, vw);
+}
+
+@mixin flexList(){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

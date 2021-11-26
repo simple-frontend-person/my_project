@@ -1,0 +1,57 @@
+mixin image(name)
+    img(src='' alt='')
+
+mixin logo()
+    .logo 
+        +image('')
+        span СтройКонтроль
+
+mixin menu(items)
+    menu    
+        each elem in items 
+            a(href=elem[0] class=`${index == 0 ? 'menu_active': ''}`)= elem[1] 
+
+mixin btnWrap(firstClass = '', secondClass = '')
+    .btn__wrap 
+        button(class='demo' class=firstClass) Заказать демо
+        button(class='more' class=secondClass) Подробнее
+
+mixin benefitItem(classMain, items)
+    div(class=classMain) 
+        img(src=items[0], alt="")
+        p= items[1]
+        p= items[2]
+
+mixin imageWrap(items)
+    each elem in items 
+        +image(elem)
+
+mixin aboutItems(title, descr, name)
+    .about__items 
+        div 
+            p= title
+            p= descr
+        +image(name)
+
+mixin postItem(classPost, name, text)
+    div(class=classPost)
+        +image(name)
+        div
+            p= text[0]
+            p= text[1]
+
+mixin listItem(text)
+    li 
+        p= text[0]
+        p= text[1]
+
+mixin certificateItem(text)
+    div
+        +image()
+        span= text
+
+mixin footerItem(title, items)
+    span title 
+    div 
+        each elem in items 
+            span= elem

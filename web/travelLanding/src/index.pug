@@ -1,0 +1,16 @@
+include pug/libs/_libs
+
+doctype html
+html(lang="en")
+    include pug/_head
+    body 
+        include pug/blocks/_header
+        main 
+            include pug/blocks/_main
+            include pug/blocks/_partner
+            include pug/blocks/_find
+            include pug/blocks/_benefit
+            include pug/blocks/_info
+            include pug/blocks/_about
+        include pug/blocks/_footer
+        +image('apple.png')

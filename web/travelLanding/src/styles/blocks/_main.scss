@@ -1,0 +1,57 @@
+.start{
+    background: linear-gradient(180deg, #C6D5DC 0%, #C9D6DE 11.93%, #D0D5DB 28%, #C8D3D9 39.46%, #C8D3D9 47.53%, #C0CFD6 56.87%, #B8C9D1 81.39%, #B8C9D1 91.4%);
+    border-radius: test(30);
+    padding: test(97) test(59) test(133.5);
+    h1{
+        font-weight: 500;
+        font-size: test(60);
+        line-height: test(85);
+        color: #000000;
+        margin-bottom: test(30);
+        width: test(637);
+    }
+    h2{
+        font-weight: 400;
+        font-size: test(18);
+        line-height: test(30);
+        color: #555555;
+        margin-bottom: test(86);
+        width: test(532);
+    }
+    &__btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: test(20);
+        button{
+            background: #FFFFFF;
+            border-radius: test(12);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: test(12);
+            padding: test(16) test(27);
+            img{
+                height: test(40);
+                width: test(40);
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                row-gap: test(6);
+                span{
+                    font-size: test(12);
+                    line-height: test(14);
+                    color: #666666;
+                    &:last-child{
+                        font-weight: bold;
+                        font-size: test(18);
+                        line-height: test(24);
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+}

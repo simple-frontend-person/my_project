@@ -1,0 +1,50 @@
+.benefit{
+    margin: test(140) 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: test(16);
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: test(31) test(20) test(51);
+        background: #FFFFFF;
+        border: 1px solid rgba(30, 194, 139, 0.06);
+        svg{
+            width: test(42);
+            height: test(48);
+        }
+        &_active{
+            box-shadow: 20px 20px 40px rgba(0, 39, 26, 0.06);
+            & .benefit__title{
+                color: #1EC28B;
+            }
+            & .benefit__img{
+                background: #1EC28B;
+                svg path{
+                    fill: white;
+                    fill-opacity: 1;
+                }
+            }
+        }
+    }
+    &__img{
+        padding: test(26) test(28);
+        margin-bottom: test(54);
+    }
+    &__title{
+        font-weight: 500;
+        font-size: test(24);
+        line-height: test(30);
+        color: #333333;
+        margin-bottom: test(12);
+    }
+    &__descr{
+        font-weight: normal;
+        font-size: test(14);
+        line-height: test(24);
+        color: #5F5F5F;
+    }
+}

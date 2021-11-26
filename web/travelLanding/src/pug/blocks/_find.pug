@@ -1,0 +1,20 @@
+section.find 
+    h3 Find The Best Destination
+    .find__header 
+        .find__filter 
+            .location 
+                input(type="text" placeholder='Location')
+            .date__start(class='date') 
+                input(type="date" placeholder='Check in')
+            .date__end(class='date')    
+                input(type="date" placeholder='Check out')
+            button Search
+        a(href="#") View All 
+    .find__wrap
+        div 
+            +image('big_img.png')
+            +image('big_img.png')
+        div
+            +image('small_img.png')
+            +image('small_img.png')
+            +image('small_img.png') 

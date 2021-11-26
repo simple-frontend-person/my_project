@@ -1,0 +1,7 @@
+@function convert($px, $pos){
+    @if $pos==true{
+        @return ($px/1440)*100vw;
+    } @else {
+        @return ($px/1440)*100vh;
+    }
+}

@@ -1,0 +1,8 @@
+header{
+    @include flexList();
+    justify-content: space-between;
+    padding: convert($px: 26, $pos: false) convert($px: 31, $pos: true);
+}
+.logo{
+    @include flexList(); 
+}
