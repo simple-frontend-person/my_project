@@ -1,0 +1,8 @@
+.post{
+    padding: convert(173, false) convert(192, true) convert(124, false);
+    h3{
+        @include font(32, 48);
+        text-align: center;
+        color: #212B31;
+    }
+}

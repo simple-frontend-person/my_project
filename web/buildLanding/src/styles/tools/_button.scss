@@ -1,0 +1,31 @@
+.btn__wrap{
+    @include flexList();
+    margin-top: convert(30, false);
+    margin-bottom: convert(88, false);
+    justify-content: center;
+    column-gap: convert(16, true);
+}
+.demo{
+    background: #212B31;
+    border: 1px solid #212B31;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    border-radius: convert(4, true);
+    color: #FFFFFF;
+    text-align: center;
+    @include font(17, 24);
+    padding: convert(13, false) convert(25, true);
+    &__header{
+        padding: convert(9, true) convert(20, false);
+        @include font(15, 16);
+    }
+}
+.more{
+    background: #FFFFFF;
+    border: 1px solid #DADEDF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    @include font(18, 24);
+    text-align: center;
+    color: #212B31;
+    padding: convert(13, false) convert(25, true);
+}

@@ -1,0 +1,16 @@
+.first{
+    padding: convert(74, false) convert(200, true);
+    h1{
+        @include font(48, 64);
+        text-align: center;
+        color: #212B31;
+        padding: 0 convert(111, true);
+    }
+    & img:first-child{
+        width: 100%;
+    }
+    & img:last-child{
+        width: 100%;
+        padding: 0 test(117, true);
+    }
+}

@@ -1,6 +1,6 @@
 @mixin font($fontSize, $lineHeight) {
-    font-size: convert($fontSize, vw);
-    line-height: convert($lineHeight, vw);
+    font-size: convert($fontSize, true);
+    line-height: convert($lineHeight, true);
 }
 
 @mixin flexList(){

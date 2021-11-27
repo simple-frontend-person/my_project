@@ -2,7 +2,28 @@ header{
     @include flexList();
     justify-content: space-between;
     padding: convert($px: 26, $pos: false) convert($px: 31, $pos: true);
+    menu{
+        @include flexList();
+        column-gap: convert(22, true);
+        a{
+            color: #72787D;
+            @include font(16, 19);
+        }
+        .menu_active{
+            color: #036FC7;
+        }
+    }
+    & div{
+        @include flexList();
+        column-gap: convert(20, true);
+    }
 }
 .logo{
     @include flexList(); 
+    column-gap: convert(8, true);
+    span{
+        @include font(22, 27);
+        text-transform: uppercase;
+        color: #212B31;
+    }
 }

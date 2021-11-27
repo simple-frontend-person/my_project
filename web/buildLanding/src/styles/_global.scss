@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+}
 @import './tools/normolize';
 @import './tools/mixin';
 @import './tools/vars';
+@import './tools/button';
+
+@import './blocks/main/first';
+@import './blocks/main/benefit';
+@import './blocks/main/info';
 
 @import './blocks/header/header';
 //require(`./img/${name}`)

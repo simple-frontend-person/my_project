@@ -1,0 +1,38 @@
+.about{
+    padding: convert(78.28, false) convert(192, true);
+    h3{
+        text-align: center;
+        @include font(32, 48);
+        color: #212B31;
+    }
+    p{
+        text-align: center;
+        @include font(20, 32);
+        color: #72787D;
+        padding: 0 convert(115, true);
+    }
+    &__items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: convert(91, true);
+        div{
+            display: flex;
+            flex-direction: column;
+            row-gap: convert(19, false);
+            p:first-child{
+                @include font(18, 24);  
+                color: #212B31;
+            }
+            p:last-child{
+                @include font(16, 24);  
+                color: #72787D;
+            }
+        }
+    }
+    & &__items:nth-child(2){
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+}

@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-weight: 400;
 }
  html {
     line-height: 1.15;
@@ -159,4 +160,5 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
+    box-sizing: border-box;
 }

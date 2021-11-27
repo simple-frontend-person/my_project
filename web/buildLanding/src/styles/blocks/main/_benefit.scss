@@ -1,0 +1,24 @@
+.benefit{
+    padding: convert(86, false) convert(192, true) convert(142, false);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: convert(10, false);
+        img{
+            margin-bottom: convert(10, false);
+        }
+        p{
+            @include font(18, 24);
+            text-align: center;
+        }
+        & p:first-child{
+            color: #212B31;
+        }
+        & p:last-child{
+            color: #72787D;
+        }
+    }
+}
